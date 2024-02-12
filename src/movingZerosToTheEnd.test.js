@@ -11,3 +11,9 @@ describe('User Story 1: Empty or 1 element in arr', () => {
     expect(movingZerosToTheEnd([false])).toStrictEqual([false]);
   });
 });
+
+describe('User Story 2: Two elements in arr', () => {
+  it('UAT2.1 When I pass [1, 0] I should see [1, 0]', () => {
+    expect(movingZerosToTheEnd([1, 0])).toStrictEqual([1, 0]);
+  });
+});
