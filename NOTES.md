@@ -42,3 +42,7 @@ As a user, I want to see correct result for array with 3 or more elemets
 - ✅ DONE Refactor
 - ✅ DONE edge cases examples
 - ⚠ TODO sonarqube
+
+Pomodoro 3:
+
+- ✅ DONE edge cases story
