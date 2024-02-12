@@ -34,4 +34,7 @@ describe('User Story 3: Three and more elements', () => {
   it('UAT3.3 When I pass [0, 2, "a", false, 1] I should see [2, "a", false, 1, 0]', () => {
     expect(movingZerosToTheEnd([0, 2, 'a', false, 1])).toStrictEqual([2, 'a', false, 1, 0]);
   });
+  it('UAT3.4 When I pass [false,1,0,1,2,0,1,3,"a"] I should see [false,1,1,2,1,3,"a",0,0]', () => {
+    expect(movingZerosToTheEnd([false, 1, 0, 1, 2, 0, 1, 3, 'a'])).toStrictEqual([false, 1, 1, 2, 1, 3, 'a', 0, 0]);
+  });
 });
