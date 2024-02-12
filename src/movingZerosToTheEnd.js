@@ -6,7 +6,9 @@ function movingZerosToTheEnd(inputArr) {
 
   let zerosCount = 0;
   for (let element of inputArr) {
-    if (element != 0) {
+    console.log('element: ', element);
+    console.log('element != 0: ', element != 0);
+    if (element != 0 || element === false) {
       resultArr.push(element);
     } else {
       zerosCount++;
