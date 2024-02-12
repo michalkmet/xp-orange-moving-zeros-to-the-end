@@ -25,5 +25,5 @@ User Story 2: Two elements in arr
 As a user, I want to see correct result for array with 2 elements
 
 - ✅ DONE UAT2.1 When I pass [1, 0] I should see [1, 0]
-  UAT2.2 When I pass [0, 1] I should see [1, 0]
+- ✅ DONE UAT2.2 When I pass [0, 1] I should see [1, 0]
   UAT2.3 When I pass [0, "a"] I should see ["a", 0]
