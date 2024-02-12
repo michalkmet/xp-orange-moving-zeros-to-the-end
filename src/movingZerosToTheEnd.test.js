@@ -19,4 +19,7 @@ describe('User Story 2: Two elements in arr', () => {
   it('UAT2.2 When I pass [0, 1] I should see [1, 0]', () => {
     expect(movingZerosToTheEnd([0, 1])).toStrictEqual([1, 0]);
   });
+  it('UAT2.3 When I pass [0, "a"] I should see ["a", 0]', () => {
+    expect(movingZerosToTheEnd([0, 'a'])).toStrictEqual(['a', 0]);
+  });
 });
