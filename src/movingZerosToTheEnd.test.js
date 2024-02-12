@@ -23,3 +23,9 @@ describe('User Story 2: Two elements in arr', () => {
     expect(movingZerosToTheEnd([0, 'a'])).toStrictEqual(['a', 0]);
   });
 });
+
+describe('User Story 3: Three and more elements', () => {
+  it('UAT3.1 When I pass [0, 1, 2] I should see [1, 2, 0]', () => {
+    expect(movingZerosToTheEnd([0, 1, 2])).toStrictEqual([1, 2, 0]);
+  });
+});

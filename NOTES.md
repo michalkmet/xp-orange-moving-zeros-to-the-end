@@ -31,3 +31,11 @@ As a user, I want to see correct result for array with 2 elements
 Pomodoro 2:
 
 - ✅ DONE UAT2.3 When I pass [0, "a"] I should see ["a", 0]
+
+User Story 3: Three and more elements
+As a user, I want to see correct result for array with 3 or more elemets
+
+- ✅ DONE UAT3.1 When I pass [0, 1, 2] I should see [1, 2, 0]
+- ⚠ TODO UAT3.2 When I pass [0, 1, 0, 2] I should see [1, 2, 0, 0]
+- ⚠ TODO UAT3.3 When I pass [0, 2, "a", false, 1] I should see [2, "a", false, 1, 0]
+- ⚠ TODO UAT3.4 When I pass [false,1,0,1,2,0,1,3,"a"] I should see [false,1,1,2,1,3,"a",0,0]
