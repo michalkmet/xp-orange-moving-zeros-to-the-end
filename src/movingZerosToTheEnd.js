@@ -1,5 +1,5 @@
 function movingZerosToTheEnd() {
-  return 'hello';
+  return [0];
 }
 
 module.exports = movingZerosToTheEnd;

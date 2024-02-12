@@ -1,7 +1,7 @@
 const movingZerosToTheEnd = require('./movingZerosToTheEnd');
 
-describe('hello', () => {
-  it('should return hello', () => {
-    expect(movingZerosToTheEnd()).toBe('hello');
+describe('User Story 1: Empty or 1 element in arr', () => {
+  it('UAT1.1 When I pass [0] I should see [0]', () => {
+    expect(movingZerosToTheEnd([0])).toStrictEqual([0]);
   });
 });
