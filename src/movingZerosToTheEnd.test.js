@@ -68,4 +68,31 @@ describe('User Story 4: Edge cases', () => {
       +0,
     ]);
   });
+  it("UAT4.2 When I pass [ 9, '1', 8, null, '9', '3', [], '4', [], false, 2, [], 5, '2', '8', '0', '2', {}, true, 3, '6', true, {}] I should see [ 9, '1', 8, null, '9', '3', [], '4', [], false, 2, [], 5, '2', '8', '0', '2', {}, true, 3, '6', true, {} ]", () => {
+    expect(movingZerosToTheEnd([9, '1', 8, null, '9', '3', [], '4', [], false, 2, [], 5, '2', '8', '0', '2', {}, true, 3, '6', true, {}])).toStrictEqual([
+      9,
+      '1',
+      8,
+      null,
+      '9',
+      '3',
+      [],
+      '4',
+      [],
+      false,
+      2,
+      [],
+      5,
+      '2',
+      '8',
+      '0',
+      '2',
+      {},
+      true,
+      3,
+      '6',
+      true,
+      {},
+    ]);
+  });
 });
