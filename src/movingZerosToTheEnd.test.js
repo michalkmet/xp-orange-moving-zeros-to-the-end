@@ -38,3 +38,34 @@ describe('User Story 3: Three and more elements', () => {
     expect(movingZerosToTheEnd([false, 1, 0, 1, 2, 0, 1, 3, 'a'])).toStrictEqual([false, 1, 1, 2, 1, 3, 'a', 0, 0]);
   });
 });
+
+describe('User Story 4: Edge cases', () => {
+  it("UAT4.1 When I pass ['a', 0,   0, 'b', null, 'c', 'd', 0, 1, false, 0, 1, 0, 3, [], 0, 1, 9, 0, 0, {}, 0, 0, 9] I should see [ 'a', 'b', null, 'c', 'd', 1, false, 1, 3, [], 1, 9, {}, 9, +0, +0, +0, +0, +0, +0, +0, +0, +0, +0 ]", () => {
+    expect(movingZerosToTheEnd(['a', 0, 0, 'b', null, 'c', 'd', 0, 1, false, 0, 1, 0, 3, [], 0, 1, 9, 0, 0, {}, 0, 0, 9])).toStrictEqual([
+      'a',
+      'b',
+      null,
+      'c',
+      'd',
+      1,
+      false,
+      1,
+      3,
+      [],
+      1,
+      9,
+      {},
+      9,
+      +0,
+      +0,
+      +0,
+      +0,
+      +0,
+      +0,
+      +0,
+      +0,
+      +0,
+      +0,
+    ]);
+  });
+});

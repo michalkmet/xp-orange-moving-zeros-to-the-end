@@ -46,3 +46,8 @@ As a user, I want to see correct result for array with 3 or more elemets
 Pomodoro 3:
 
 - ✅ DONE edge cases story
+  User Story 4: Edge cases
+  As a user, I want to see correct result for array with edge case element
+
+UAT4.1 When I pass ['a', 0, 0, 'b', null, 'c', 'd', 0, 1, false, 0, 1, 0, 3, [], 0, 1, 9, 0, 0, {}, 0, 0, 9] I should see [ 'a', 'b', null, 'c', 'd', 1, false, 1, 3, [], 1, 9, {}, 9, +0, +0, +0, +0, +0, +0, +0, +0, +0, +0 ]
+UAT4.2 When I pass [ 9, '1', 8, null, '9', '3', [], '4', [], false, 2, [], 5, '2', '8', '0', '2', {}, true, 3, '6', true, {}] I should see [ 9, '1', 8, null, '9', '3', [], '4', [], false, 2, [], 5, '2', '8', '0', '2', {}, true, 3, '6', true, {} ]

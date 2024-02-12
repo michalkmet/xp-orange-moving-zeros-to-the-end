@@ -29,3 +29,9 @@ UAT3.1 When I pass [0, 1, 2] I should see [1, 2, 0]
 UAT3.2 When I pass [0, 1, 0, 2] I should see [1, 2, 0, 0]
 UAT3.3 When I pass [0, 2, "a", false, 1] I should see [2, "a", false, 1, 0]
 UAT3.4 When I pass [false,1,0,1,2,0,1,3,"a"] I should see [false,1,1,2,1,3,"a",0,0]
+
+User Story 4: Edge cases
+As a user, I want to see correct result for array with edge case elements
+
+UAT4.1 When I pass ['a', 0, 0, 'b', null, 'c', 'd', 0, 1, false, 0, 1, 0, 3, [], 0, 1, 9, 0, 0, {}, 0, 0, 9] I should see [ 'a', 'b', null, 'c', 'd', 1, false, 1, 3, [], 1, 9, {}, 9, +0, +0, +0, +0, +0, +0, +0, +0, +0, +0 ]
+UAT4.2 When I pass [ 9, '1', 8, null, '9', '3', [], '4', [], false, 2, [], 5, '2', '8', '0', '2', {}, true, 3, '6', true, {}] I should see [ 9, '1', 8, null, '9', '3', [], '4', [], false, 2, [], 5, '2', '8', '0', '2', {}, true, 3, '6', true, {} ]
