@@ -7,4 +7,7 @@ describe('User Story 1: Empty or 1 element in arr', () => {
   it('UAT1.2 When I pass [] I should see []', () => {
     expect(movingZerosToTheEnd([])).toStrictEqual([]);
   });
+  it('UAT1.3 When I pass [false] I should see [false]', () => {
+    expect(movingZerosToTheEnd([false])).toStrictEqual([false]);
+  });
 });
